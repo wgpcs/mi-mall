@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import jsonp from 'jsonp'
+// import storage from './storage'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      res: {}
+    }
+  },
+  mounted(){
+    // storage.setItem('name', 'jim')
+    // storage.setItem('wgp',{name: 'wgp'})
+    // storage.setItem('age',32, 'wgp')
+    // storage.clear('name','wgp')
+    this.axios.get('/user/login').then((res)=>{
+      this.res = res
+    })
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

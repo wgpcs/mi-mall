@@ -1,0 +1,97 @@
+blockquote,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body,
+html {
+    color: #333333;
+    height: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+html,
+body,
+input,
+textarea,
+select,
+button {
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans GB',
+        'Arial', sans-serif;
+}
+
+:lang(zh-CN) {
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans GB',
+        'Arial', Microsoft YaHei, FontAwesome, sans-serif;
+}
+
+:lang(zh) {
+    font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 0;
+}
+
+a:focus,
+div:focus {
+    outline: none;
+}
