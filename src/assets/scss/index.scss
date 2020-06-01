@@ -1,0 +1,41 @@
+@import './config.scss';
+@import './reset.scss';
+@import './base.scss';
+
+.ind {
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: table;
+}
+
+body {
+    min-width: $min-pc-width;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container {
+    width: $min-pc-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// .container:after,
+// .container:before {
+//     content: " ";
+//     display: table;
+// }
+
+// --------------------------字体主题
+// header 导航字体
+.header-nav-li {
+    font-size: $font-smaller;
+}

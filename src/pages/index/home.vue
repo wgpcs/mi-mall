@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div :class="classObj" class="app-wrapper">
-    <!-- <Wheader class="header-container" /> -->
+    <WHeader class="header-container" />
     <div class="main-container">
       <!-- <app-main /> -->
     </div>
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import WHeader from 'components/WHeader/index'
 export default {
   name: 'home',
   data() {
@@ -17,7 +18,7 @@ export default {
     }
   },
   components: {
-    
+    WHeader
   },
   computed: {
     classObj() {
@@ -28,4 +29,5 @@ export default {
   },
 }
 </script>
-<style scoped></style>
+<style lang='scss' scoped>
+</style>
